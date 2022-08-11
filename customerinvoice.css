@@ -1,0 +1,86 @@
+*{
+	margin:0 ;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* banner holding navigation bar and content information */
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tins.jpg);
+	/* to fit the whole div */
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.navbar{
+	height: 1vh;
+	padding:35px ;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background:#4682B4;
+
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 100px 0 100px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	width: 100%;
+	height: 5px;
+	background: #32cd32;
+}
+/*END OF NAVIGATION*/
+.content{
+	top: 70%;
+	color:#ffff00;
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 200px;
+	text-align: center;
+}
+.content p{
+	margin: 20px auto;
+	text-align: center;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 30px;
+}
+#customers {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #customers td, #customers th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: darkorange;
+	color: white;
+  }
+  .cust_profile{
+	  color: #fff;
+	  font-size: 30px;
+	  margin-bottom: 10px;
+  }

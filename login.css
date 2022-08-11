@@ -1,0 +1,63 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: Arial, New Times Roman;
+}
+
+.head{
+	text-align: center; /*position*/
+	padding-top: 20px;
+	font-size: 25px;
+	padding-bottom: 20px;
+
+}
+.container {
+ text-align: center;
+display: block; /*  start a new line, and takes up the whole width	*/
+line-height: 40px; /* specifies the height of a line.*/
+}
+.container .email_lbl{
+	margin-left: -26%;
+	font-size: 22px;
+	line-height: inherit; /*height of line from parent property*/
+	color: darkgreen;
+
+}
+.container .password_lbl{
+	margin-left: -23%;
+	font-size: 22px;
+	line-height: inherit; /*height of line from parent property*/
+	color: darkgreen; 
+
+}
+.container input{
+	width: 30%;
+	height: 50px;
+
+}
+button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 10px;
+    background:	linear-gradient(#0bab64,#3bb78f);
+    border-radius: 20px; /*rounded corners of button*/
+}
+
+.register{
+		margin-top: 0px;	
+		text-align: center;
+}
+.register a{
+	color: #5D3FD3;
+}
+.forgot{
+		margin-top: 10px; /*create space around elements, outside of any defined borders.*/
+		text-align: left;
+		margin-left: 480px;
+		
+}
+.forgot a{
+	color:#5D3FD3;
+}

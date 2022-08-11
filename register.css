@@ -1,0 +1,51 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: Arial, New Times Roman;
+}
+
+.head{
+	text-align: center; /*position*/
+	padding-top: 20px;
+	font-size: 25px;
+	padding-bottom: 20px;
+
+}
+/* styling form  */
+.container {
+	line-height: 40px;
+}
+
+.container label{
+	font-size: 20px;
+	line-height:inherit; /*height of line from parent property*/
+	
+}
+.container input{
+	width: 500px;
+	height: 45px;
+}
+.to-left{
+padding-left:30%;
+
+}
+/* styling form  */
+
+.chagua select{
+	height: 45px;
+    font-size: 15px;
+    width: 500px;
+    background: #DCDCDC;
+}
+/* styling submit button  */
+button{
+    margin-top: 40px;
+    margin-bottom: 20px;
+	margin-left: 450px;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 10px;
+    background:	linear-gradient(#0bab64,#3bb78f);
+    border-radius: 20px; /*rounded corners of button*/
+}
+

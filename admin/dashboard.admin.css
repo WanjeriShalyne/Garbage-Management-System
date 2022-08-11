@@ -1,0 +1,108 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: sans-serif;
+}
+/* banner holding navigation bar and content information */
+.banner{
+	width: 100%;/* extent of something from side to side*/
+	height: 100vh; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tins.jpg);
+	/* to fit the whole div */
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.navbar{
+	height: 50px; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	padding:20px ; /*space btwn content and border*/
+	display: flex; /*expands items to fill available free space or shrinks them to prevent overflow. */
+	align-items: center;
+	justify-content: space-evenly; /*distributes space between and around content items along the main-axis of a flex container*/
+	background:#4682B4;
+
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;/*makes the element generate a block box that's laid out as if it were an inline */
+	margin: 0 50px 0 0px; /*create space around elements, outside of any defined borders.*/
+
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	width: 100%;
+	height: 5px;
+	background: #32cd32;
+}
+/*END OF NAVIGATION*/
+
+.content{
+	top: 70%; /*Sets the top edge position in % of containing element.*/
+	color:#ffff00;
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 200px; /*create space around elements, outside of any defined borders.*/
+	text-align: center; /*position*/
+}
+.content p{
+	margin: 20px auto; /*set margin top and bottom,auto calculates browser margin for left and right*/
+	text-align: center;
+	font-weight: 100; /*the thickness of the character */
+	line-height: 25px;/*property sets the height of a line box.*/
+	font-size: 30px;
+}
+
+ /* calling id customers */
+ #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;/*whether cells inside a <table> have shared or separate borders.Collapse-shared*/
+    width: 100%;
+  }
+  
+  #customers td, #customers th { /*styling both table data and table header to have same style*/
+    border: 1px solid #ddd;
+    padding: 8px;/*space btwn your content and border*/
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;} /*styling table row .#customers is the parent,
+  tr is the child.
+  nth-child will count from the 1st row to the last row of even numbers to have the declared color*/
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;/*space btwn content and border*/
+    padding-bottom: 12px;
+    text-align: left;/*position*/
+    background-color: #4682b4;
+    color: white;
+  }
+ /* styling tables */
+
+ 
+  .side_menu{
+	float: left;  /*places an element on the left or right side of its container, 
+	allowing text and inline elements to wrap around it.*/
+	width: 18%; /*Defines the width in percent of the containing block*/
+	background-color: #eee;
+	min-height: 760px;/*It prevents the used value of the height property from becoming smaller than the value specified*/
+	max-height: 150vh;/*It prevents the used value of the height property from becoming larger than the value specified */
+	padding: 26px 4px 4px 4px;
+
+	
+  }
+  .main_dashboard{
+	  float:right;
+	  width:80%;
+	  padding: 26px 0px 0px 10px;
+  }
+  
+ 
+  

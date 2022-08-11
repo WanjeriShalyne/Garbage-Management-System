@@ -1,0 +1,158 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: Arial, New Times Roman;
+}
+/* banner holding navigation bar and content information */
+.banner{
+	width: 100%; /* extent of something from side to side*/
+	height: 100vh;/* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tins.jpg);/*combination of two of more
+	colors to form a smooth transition*/
+	/* to fit the whole div */
+	background-size: cover;
+	background-position: center;
+	
+}
+.navbar{
+	height: 50px; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	padding:20px ; /*space btwn content and border*/
+	display: flex; /*expands items to fill available free space or shrinks them to prevent overflow. */
+	align-items: center;
+	justify-content: space-evenly; /*distributes space between and around content items along the main-axis of a flex container*/
+	background:#4682B4;
+
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;/*makes the element generate a block box that's laid out as if it were an inline */
+	margin: 0 50px 0 0px;
+
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	width: 100%;
+	height: 5px;
+	background: #32cd32;
+}
+/*END OF NAVIGATION*/
+.content{
+	top: 70%; /*Sets the top edge position in % of containing element.*/
+	color:#ffff00;
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 200px;/*create space around elements, outside of any defined borders.*/
+	text-align: center;
+}
+.content p{
+	margin: 20px auto; /*create space around elements, outside of any defined borders.*/
+	text-align: center;
+	font-weight: 100;/*the thickness of the character */
+	line-height: 25px; /*property sets the height of a line box.*/
+	font-size: 30px;
+}
+
+/*WHAT WE DO*/
+#feature{
+	width: 100%;
+	padding: 70px 0;
+}
+.title-text{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.title-text p{
+	margin: auto;
+	font-size: 20px;
+	color: darkgreen;
+	font-weight: bold;
+	/* position: relative; /*postion element on its current position without changing layout.
+	Element remain in normal document flow*/ 
+	display: inline-block; /*makes the element generate a block box that's laid out as if it were an inline */
+}
+
+.title-text h1{
+	font-size: 50px;
+}
+.feature-box{
+	width: 80%;
+	margin: auto;  /*create space around elements, outside of any defined borders.*/
+	display: flex;/*expands items to fill available free space or shrinks them to prevent overflow. */
+	flex-wrap: wrap;/*flex items are forced onto one line or can wrap onto multiple lines. */
+	/* align-items: center; */
+	text-align: center;
+}
+.features{
+	flex-basis: 50%;/*sets the initial main size of a flex item.It sets the size of the content box*/
+}
+.feature-box{
+	flex-basis: 50%;/*sets the initial main size of a flex item.It sets the size of the content box*/
+	margin: auto;
+}
+.feature-box img{
+	width: 70%;
+	border-radius:10px;/*rounds the corners of an element's outer border edge.*/
+	margin-bottom: 70px;
+}
+.features h1{
+	text-align: left;
+	margin-bottom: 10px;/*create space around elements, outside of any defined borders.*/
+	font-weight: 100;/*the thickness of the character */
+	color: darkgreen;
+	font-size: 30px;
+
+
+}
+.feature-desc{
+	display: flex;/*expands items to fill available free space or shrinks them to prevent overflow. */
+	align-items: center;
+	margin-bottom: 40px;
+	font-size:22px;
+
+
+}
+.feature-text p{
+	padding: 0 20px;
+	text-align: initial;/*default value*/
+
+}
+
+/*WHAT WE DO*/
+
+
+
+#footer{
+	margin-top: 40px;
+	background:#A9A9A9;
+
+}
+.footer-row{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;/*expands items to fill available free space or shrinks them to prevent overflow. */
+	justify-content: space-between; /*distributes space between and around content items along the main-axis of a flex container*/
+	flex-wrap: wrap;/*flex items are forced onto one line or can wrap onto multiple lines. */
+}
+.footer-left,.footer-right{ /*combining*/
+	flex-basis: 45%;/*sets the initial main size of a flex item.It sets the size of the content box*/
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.footer-right{
+	text-align: right;
+}
+.footer-row h1{
+	margin: 10px 0;
+	font-size: 30px;
+}
+.footer-row p{
+	line-height: 1.6; /*multiplied by current font-size to set the line height */
+	font-size: 22px;
+}
+

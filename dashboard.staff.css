@@ -1,0 +1,97 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: sans-serif;
+}
+/* banner holding navigation bar and content information */
+.banner{
+    width: 100%;/* extent of something from side to side*/
+	height: 100vh; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tins.jpg);
+	/* to fit the whole div */
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.navbar{
+	height: 50px; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	padding:20px ; /*space btwn content and border*/
+	display: flex; /*expands items to fill available free space or shrinks them to prevent overflow. */
+	align-items: center;
+	justify-content: space-evenly; /*distributes space between and around content items along the main-axis of a flex container*/
+	background:#4682B4;
+
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;/*makes the element generate a block box that's laid out as if it were an inline */
+	margin: 0 50px 0 0px;
+
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	width: 100%;
+	height: 5px;
+	background: #32cd32;
+}
+/*END OF NAVIGATION*/
+.content{
+	top: 70%;
+	color:#ffff00;
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 200px;
+	text-align: center;
+}
+.content p{
+	margin: 20px auto;
+	text-align: center;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 30px;
+}
+          .h3_profile{
+                    width: 46%;
+                    border-style: none;
+                    padding: 12px;
+                    font-size: 25px;
+                    margin-left: 20px;
+                   
+                }
+                .profile_update_form{
+                     width: 30%;
+                    border-style: none;
+                    padding: 10px;
+                    font-size: 14px;
+                    border-radius: 10px;
+                    margin-left: 20px;
+                    color: #333333a6;
+                }
+                .update_profile_btn{
+                    padding: 5px;
+                    font-size: 22px;
+                    background:#ff8c00;
+                    border-radius: 10px;
+                    margin-top:30px;
+                    cursor:pointer;
+                    color: #fff;
+                }
+
+                .profile_span{
+                    width:40%;
+                }
+                
+
+                /* own css*/
+
+                .h3_profile{
+                    margin-top: -6%;
+                }
+

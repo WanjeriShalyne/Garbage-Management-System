@@ -1,0 +1,142 @@
+/* 
+
+<absolute> position element based on closest postioned ancestor position
+<relative> postion element on its current position without changing layout.Element remain in normal document flow 
+
+
+*/
+<script type="text/javascript">
+const form = document.getElementById("registerform");
+
+const firstname = document.getElementById("firstname");
+const errfirstname = document.getElementById("errfirstname");
+
+const lastname = document.getElementById("lastname");
+const errlastname = document.getElementById("errlastname");
+
+const email = document.getElementById("email");
+const erremail = document.getElementById("erremail");
+
+const mobilenumber = document.getElementById("mobilenumber");
+const errmobilenumber = document.getElementById("errmobilenumber");
+
+const password1 = document.getElementById("password1");
+const errpassword1 = document.getElementById("errpassword1");
+
+const password2 = document.getElementById("password2");
+const errpassword2 = document.getElementById("errpassword2");
+
+const county = document.getElementById("county");
+const errcounty = document.getElementById("errcounty");
+
+const roadname = document.getElementById("roadname");
+const errroadname = document.getElementById("errroadname");
+
+const apartment = document.getElementById("apartment")
+const errapartment = document.getElementById("errapartment");
+
+const housenumber = document.getElementById("housenumber")
+const errhousenumber = document.getElementById("errhousenumber");
+
+//email validation
+const emailIsValid = email => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+ }
+  form.addEventListener('submit', function(event){
+	  
+	//first name validation - check if is empty
+	if(firstname.value==""){
+		let message = [];
+		 message.push("First Name can not be empty");
+		errfirstname.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	//last name validation - check if is empty
+	if(lastname.value==""){
+		let message = [];
+		message.push("Last Name can not be empty");
+		errlastname.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  //email valadation - check empty
+	  if(email.value==""){
+		let message = [];
+		message.push(" Email can not be empty");
+		erremail.innerText = message.join(',');
+		event.preventDefault()
+	  }
+	  // email is a valid one!
+	  if(!emailIsValid(email.value)){
+		let message = [];
+		message.push(" Email entered is not valid");
+		erremail.innerText = message.join(',');
+		event.preventDefault()
+	  }
+	 // mobilenumber validation
+	  if(mobilenumber.value==""){
+		let message = [];
+		message.push(" Mobile number can not be empty");
+		errmobilenumber.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  // password1 validation 
+	  if(password1.value==""){
+		let message = [];
+		message.push(" Password can not be empty");
+		errpassword1.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  // password2 validation 
+	  if(password2.value==""){
+		let message = [];
+		message.push(" Password can not be empty");
+		errpassword2.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  // check if password1 is equal to password2
+	  if(password1.value!=password2.value && password2.value!=password1.value){
+		let message = [];
+		message.push(" Password don't match each other");
+		errpassword1.innerText = message.join(',');
+		errpassword2.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  // county validation
+	  if(county.value==""){
+		let message = [];
+		message.push("county can not be empty");
+		errcounty.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	  // roadname vadation
+	  if(roadname.value==""){
+		let message = [];
+		message.push("Road name  can not be empty");
+		errroadname.innerText = message.join(',');
+		event.preventDefault()
+	  }
+
+	   // apartment vadation
+	   if(apartment.value==""){
+		let message = [];
+		message.push("Apartment can not be empty");
+		errapartment.innerText = message.join(',');
+		event.preventDefault()
+	  }
+	   // housenumber vadation
+	   if(housenumber.value==""){
+		let message = [];
+		message.push("House number can not be empty");
+		errhousenumber.innerText = message.join(',');
+		event.preventDefault()
+	  }	
+	
+  })
+</script>

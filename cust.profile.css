@@ -1,0 +1,60 @@
+*{
+	margin: 0; /*create space around elements, outside of any defined borders.*/
+	padding: 0; /*space btwn content and border*/
+	font-family: Arial, New Times Roman;
+}
+/* banner holding navigation bar and content information */
+.banner{
+	width: 100%; /* extent of something from side to side*/
+	height: 100vh;/* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tins.jpg);/*combination of two of more
+	colors to form a smooth transition*/
+	/* to fit the whole div */
+	background-size: cover;
+	background-position: center;
+	
+}
+.navbar{
+	height: 50px; /* viewport height.Region of the screen used to display a portion of the total image to be shown.*/
+	padding:20px ; /*space btwn content and border*/
+	display: flex; /*expands items to fill available free space or shrinks them to prevent overflow. */
+	align-items: center;
+	justify-content: space-evenly; /*distributes space between and around content items along the main-axis of a flex container*/
+	background:#4682B4;
+
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;/*makes the element generate a block box that's laid out as if it were an inline */
+	margin: 0 50px 0 0px;
+
+}
+.navbar ul li a{
+	text-decoration:none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	width: 100%;
+	height: 5px;
+	background: #32cd32;
+}
+/*END OF NAVIGATION*/
+
+.profile h1{
+ text-align: center;
+ padding-top: 40px;
+ padding-bottom: 40px;
+
+
+}
+
+.dis1{
+	margin-left: 100px;
+	line-height: 1.6;
+	font-size: 20px;
+}
+.dis1 ul li{
+	list-style: none;
+}

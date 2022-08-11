@@ -1,0 +1,68 @@
+
+.reports_sidenav_menu ul li{
+    margin-top:40px;
+    text-align:center;
+    margin-left:500px;
+    list-style:none;
+    text-transform: uppercase;
+}
+.reports_sidenav_menu ul li a{
+    text-decoration: none;
+    display:inline-block;
+    color:darkgreen;
+     
+}
+.reports_sidenav_menu ul li a:hover{
+	background:lightgrey;
+}
+/* styling list of reports to be generated */
+
+.report_side_menu{
+    margin-top:7px;
+	font-size:18px;
+    text-decoration: none;
+    width: 20%;
+    float:left;
+}
+.report_dashaboard{
+    
+    font-size: 16px;
+    float: right;
+    width:78%
+	
+}
+.filter_desc{
+    max-width: 20%;
+    
+}
+.filter_name_service{
+    max-width:20%;
+}
+.filter_name_county{
+    max-width: 20%;
+    
+}
+
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4682b4;
+    color: white;
+  }
